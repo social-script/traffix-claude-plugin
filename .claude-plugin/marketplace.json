@@ -1,0 +1,11 @@
+{
+  "name": "traffix",
+  "owner": { "name": "Social Script", "url": "https://traffix.dev" },
+  "plugins": [
+    {
+      "name": "traffix",
+      "source": "./traffix",
+      "description": "SEO/AEO/GEO opportunities + the build-site methodology in your Claude Code, via the traffix.dev MCP."
+    }
+  ]
+}

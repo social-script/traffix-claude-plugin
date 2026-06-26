@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "traffix": {
+      "type": "http",
+      "url": "https://traffix.dev/api/mcp",
+      "headers": { "Authorization": "Bearer ${TRAFFIX_API_KEY}" }
+    }
+  }
+}
