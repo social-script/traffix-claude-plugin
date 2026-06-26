@@ -13,7 +13,7 @@ It connects Claude Code to the traffix.dev MCP and adds:
 ## Install
 
 ```
-/plugin marketplace add social-script/traffix-claude-plugin
+/plugin marketplace add https://github.com/social-script/traffix-claude-plugin
 /plugin install traffix@traffix
 ```
 
