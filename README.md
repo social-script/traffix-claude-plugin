@@ -6,8 +6,9 @@ It connects Claude Code to the traffix.dev MCP and adds:
 
 - **/weekly** — a client-ready weekly SEO update across your portfolio
 - **/optimize [client]** — execute the highest-impact opportunity end to end (fix in your repo → log it back)
-- **/audit [client]** — a full SEO/AEO/GEO audit (visibility, pages, CWV, keyword gaps, backlog)
-- **/build [what]** — build/optimise a page using the build-site methodology
+- **/audit [domain]** — a full SEO/AEO/GEO audit of any site (no connection needed — runs an instant readiness check, then goes deeper for connected clients)
+- **/build [what]** — build/optimise a page using the build-site methodology, then verify it
+- **/llms-txt [domain]** — generate a ready-to-paste llms.txt for any site
 
 ## Install
 

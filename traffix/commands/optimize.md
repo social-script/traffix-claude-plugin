@@ -10,5 +10,6 @@ Use the `traffix` MCP server to execute the top opportunity for **$1** (or ask w
 4. If you need the full methodology, call `get_methodology(playbook_ref)` for the verbatim build-site reference.
 5. Execute the fix in the current repo, following the playbook step by step. Use `keyword_research` / `serp_analysis` for live intent where useful.
 6. Build/verify locally. Commit on a branch and (if the user approves) push.
-7. Call `log_change(site_id, summary, commit)` and `update_opportunity(opportunity_id, "done")`.
+7. If the fix was a structured-data / llms.txt / AEO-GEO opportunity, run `check_readiness(<url>)` after deploy to confirm the gap actually closed before marking it done.
+8. Call `log_change(site_id, summary, commit)` and `update_opportunity(opportunity_id, "done")`.
 Report what you changed and the expected impact.
