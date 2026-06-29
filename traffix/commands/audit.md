@@ -4,16 +4,18 @@ argument-hint: [client name or domain]
 ---
 Use the `traffix` MCP server to audit **$1**.
 
-Start with a readiness check that works on **any URL** — no connection required:
+Start with the checks that work on **any URL** — no connection required:
 
 1. `check_readiness("$1")` → a 0–100 SEO/AEO/GEO score plus per-check gaps (structured data, llms.txt, AI-crawler access, sitemap, canonical, Open Graph, title/description). Each gap names the build-site reference that fixes it.
+2. `check_ai_visibility(domain)` → **actual** AI-engine visibility (not just readiness): where the domain is already cited in Google AI Overviews / ChatGPT, for which questions, and the AI search volume it captures. Pass the client's main topic/competitor keywords to also get the **share-of-voice leaderboard** (who dominates AI answers, and where this domain ranks). This is the differentiator — report it prominently under *GEO & AI discoverability*.
+3. `get_backlinks(domain)` → authority profile (rank, referring domains, dofollow split, broken links) for the *Off-page & local* section.
 
 If **$1** is a connected client, go deeper with Search Console + research:
 
-2. `get_site(site_id)` → identity, latest GSC metrics, connection status.
-3. `get_research(site_id)` → keyword universe (intent · volume · difficulty), domain visibility, competitors.
-4. `get_pages(site_id)` → per-page performance, index status, Core Web Vitals.
-5. `get_trends(site_id)` → momentum.
+4. `get_site(site_id)` → identity, latest GSC metrics, connection status.
+5. `get_research(site_id)` → keyword universe (intent · volume · difficulty), domain visibility, competitors.
+6. `get_pages(site_id)` → per-page performance, index status, Core Web Vitals.
+7. `get_trends(site_id)` → momentum.
 
 Call `get_methodology()` once to get the methodology **category map** (`referencesByCategory`), then produce the audit **grouped by category** rather than as a flat list.
 
