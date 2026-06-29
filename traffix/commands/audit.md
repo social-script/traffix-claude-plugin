@@ -15,4 +15,11 @@ If **$1** is a connected client, go deeper with Search Console + research:
 4. `get_pages(site_id)` → per-page performance, index status, Core Web Vitals.
 5. `get_trends(site_id)` → momentum.
 
-Produce a structured audit: **Readiness score & gaps** (from `check_readiness`) → **Visibility & momentum** → **Top pages & issues** (index/CWV) → **Keyword gaps** (winnable = high volume + low KD) → **Prioritised backlog** (top 10 by impact). For any fix, pull `get_methodology(ref)` for the verbatim build-site reference. Be specific and cite the numbers.
+Call `get_methodology()` once to get the methodology **category map** (`referencesByCategory`), then produce the audit **grouped by category** rather than as a flat list.
+
+- Open with the **Readiness score** (from `check_readiness`).
+- Then one section per methodology category that has findings, in catalog order: **Foundations · SEO (on-page) · GEO & AI discoverability · Performance & QA · Visual, design & components · Content & internal linking · Conversion & measurement · Off-page & local**. Under each, list the specific gaps (from `check_readiness`, and for connected clients from `get_research`/`get_pages`/`get_trends`) with the actual numbers, and name the fixing reference.
+- **Treat a category with zero coverage as a finding, not a pass** — an empty *GEO & AI discoverability* or *Conversion & measurement* section is one of the biggest misses, so call it out explicitly.
+- Close with a **Prioritised backlog (top 10 by impact)**, each item tagged with the category it sits in.
+
+For any fix you detail, pull `get_methodology(ref)` for the verbatim build-site reference. Be specific and cite the numbers.
