@@ -1,7 +1,7 @@
 {
   "name": "traffix",
-  "version": "0.1.0",
-  "description": "The SEO/AEO/GEO brain for your Claude Code. Pulls prioritised opportunities + the build-site methodology from traffix.dev and executes them in your repo.",
+  "version": "0.1.1",
+  "description": "The SEO/AEO/GEO brain for your Claude Code. Pulls prioritised opportunities + the build-site methodology from traffix.dev and executes them in your repo. Connects over OAuth — no API key needed.",
   "author": { "name": "Social Script", "url": "https://traffix.dev" },
   "homepage": "https://traffix.dev"
 }
